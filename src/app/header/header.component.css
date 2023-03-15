@@ -1,0 +1,21 @@
+.container {
+    height: calc( 100% - 65px );
+}
+
+.thales-logo {
+    width: 200px;
+    padding : 20px;
+}
+
+
+mat-toolbar {
+    background-color: #fff;
+    position: relative;
+    z-index: 5;
+    
+}
+
+.text {
+    font: 400 25px "gibson";
+    color: #5b5b5b;
+}
