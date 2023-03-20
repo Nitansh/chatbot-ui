@@ -9,7 +9,7 @@ import { catchError, retry, throwError } from 'rxjs';
 })
 export class ChatbotService {
 
-  private queryURL = 'http://127.0.0.1:5000/query';
+  private queryURL = '/query';
 
   constructor(private http: HttpClient) { }
 

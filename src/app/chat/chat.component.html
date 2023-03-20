@@ -24,11 +24,12 @@
                     #autosize="cdkTextareaAutosize"
                     cdkAutosizeMinRows="1"
                     cdkAutosizeMaxRows="5"
+                    (keyup.enter)="getChatbotResponse($event)"
                     [(ngModel)]="query">
             </textarea>
         </div>
         <div>
-            <button mat-raised-button color="primary" (click)="getChatbotResponse()">Send</button>
+            <button mat-raised-button color="primary" (click)="getChatbotResponse({})">Send</button>
         </div>
     </div>
 </div>

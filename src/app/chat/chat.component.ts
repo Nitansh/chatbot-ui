@@ -21,7 +21,8 @@ export class ChatComponent {
   public query:string = '';
   public messages: Array<message> = [];
   
-  getChatbotResponse(): void {
+  getChatbotResponse( args: object ): void {
+    console.log( args );
     const queryPayload = { query : this.query }
     this.chatbotService.getResponse( queryPayload )
         .subscribe(
@@ -30,6 +31,7 @@ export class ChatComponent {
             this.query = '';
           }
         );
+    this.query = '';
   }
 
   triggerResize() {
