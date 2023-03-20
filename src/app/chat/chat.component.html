@@ -1,20 +1,22 @@
 <div class="chat-container">
-    <div class="messages-container" style="min-height: 90%; overflow: auto;" #scrollMe [scrollTop]="scrollMe.scrollHeight">
-        <div *ngFor="let message of messages" class="message">
-            <mat-card class="user-card">
-                <mat-card-content>
-                    <mat-card-subtitle>You</mat-card-subtitle>
-                    {{ message.query || 'NA' }}
-                </mat-card-content>
-            </mat-card>
+    <div class="chat-image-container">
+        <div class="messages-container" style="min-height: 90%; overflow: auto;" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+            <div *ngFor="let message of messages" class="message">
+                <mat-card class="user-card">
+                    <mat-card-content>
+                        <mat-card-subtitle>You</mat-card-subtitle>
+                        {{ message.query || 'NA' }}
+                    </mat-card-content>
+                </mat-card>
+                <br>
+                <mat-card class="sm-chatbot-card">
+                    <mat-card-content>
+                        <mat-card-subtitle>SM-CHATBOT</mat-card-subtitle>
+                        {{ message.message }}
+                    </mat-card-content>
+                </mat-card>
             <br>
-            <mat-card class="sm-chatbot-card">
-                <mat-card-content>
-                    <mat-card-subtitle>SM-CHATBOT</mat-card-subtitle>
-                    {{ message.message }}
-                </mat-card-content>
-            </mat-card>
-        <br>
+            </div>
         </div>
     </div>
     <div class="controls-container">
