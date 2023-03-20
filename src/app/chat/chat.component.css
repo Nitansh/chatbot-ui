@@ -1,7 +1,5 @@
 .chat-container {
-    display: flex;
-    height: 100%;
-    flex-direction: column;
+    height: calc(100% - 75px );
 }
 
 .chat-image-container { 
@@ -9,15 +7,23 @@
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "gibson";
-    filter: blur(4px);
     height: 100%;
-    -webkit-filter: blur(4px);
+    width:100%;
 }
 
-.message-container {
+.messages-container {
+    height: 100%;
     width: 100%;
-    min-height: 90%;
     overflow: auto;
+    opacity: 60%;
+}
+
+.user-card {
+    background: #2c2f73;
+}
+
+.sm-chatbot-card {
+    background: #5ebfd4;
 }
 
 .message {

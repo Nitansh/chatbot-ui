@@ -1,6 +1,6 @@
 <div class="chat-container">
     <div class="chat-image-container">
-        <div class="messages-container" style="min-height: 90%; overflow: auto;" #scrollMe [scrollTop]="scrollMe.scrollHeight">
+        <div class="messages-container" #scrollMe [scrollTop]="scrollMe.scrollHeight">
             <div *ngFor="let message of messages" class="message">
                 <mat-card class="user-card">
                     <mat-card-content>
